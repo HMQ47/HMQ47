@@ -1,0 +1,36 @@
+public class os01 {
+    static Integer[] intArray = {10,20,30,40,50,60,70,80,90};
+    int[] o=new int[intArray.length];
+    public void print (){
+        System.out.println("قبل");
+        for(int i=0;i<intArray.length;i++)
+            System.out.print(intArray[i] + "  ");
+        System.out.println();
+
+    }
+    public void Switch(){
+        System.out.println("بعد");
+        for(int i=intArray.length-1;i>=0;i--) {
+            o[i]=intArray[i];
+            System.out.print(o[i] + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        os01 y=new os01();
+        y.print();
+        y.Switch();
+
+    }
+}
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
